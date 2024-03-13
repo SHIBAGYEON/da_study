@@ -1,0 +1,5 @@
+document.querySelectorAll('.repository-content .numbers-summary a').forEach(a => {
+    if (/commits/.test(a.innerHTML)) {
+        a.innerHTML = a.innerHTML.replace(/commits/, "커밋");
+    }
+});
